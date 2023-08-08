@@ -5,7 +5,7 @@ import haxe.io.Bytes;
 typedef Account = {
 	username:String,
 	userID:Int,
-	password:String,
+	password:Bytes,
 	profile:{
 		displayName:String, pfp:Bytes, bio:String
 	}
