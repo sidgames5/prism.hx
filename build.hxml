@@ -1,0 +1,5 @@
+-cp src
+-D analyzer-optimize
+--library crypto:1.0.4
+--main prism.test.Main
+--interp

@@ -1,0 +1,14 @@
+{
+	"name": "prism.hx",
+	"url": "https://github.com/sidgames5/prism.hx",
+	"license": "GPL",
+	"tags": ["api"],
+	"description": "Prism API wrapper for haxe",
+	"version": "0.1.0",
+	"classPath": "src/",
+	"releasenote": "",
+	"contributors": ["SidGames5"],
+	"dependencies": {
+		"crypto": "1.0.4"
+	}
+}
