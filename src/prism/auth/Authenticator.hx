@@ -36,6 +36,7 @@ class Authenticator {
 			var data:Request = Json.parse(Encryption.decrypt(Bytes.ofHex(raw), null).toString());
 			code = data.status;
 		}
+		req.request(true);
 
 		return code;
 	}
