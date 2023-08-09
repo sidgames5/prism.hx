@@ -1,5 +1,6 @@
 package prism.util.structs;
 
+import prism.util.structs.Message;
 import haxe.io.Bytes;
 
 typedef Action = {
@@ -7,6 +8,7 @@ typedef Action = {
 	?params:{
 		?username:String,
 		?password:String,
-		?data:Any
+		?data:Any,
+		?message:Message
 	}
 }
