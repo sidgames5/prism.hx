@@ -2,6 +2,7 @@ package prism.util.structs;
 
 import prism.util.structs.Message;
 import haxe.io.Bytes;
+import prism.util.structs.Message
 
 typedef Action = {
 	instruction:Int,
@@ -9,6 +10,6 @@ typedef Action = {
 		?username:String,
 		?password:String,
 		?data:Any,
-		?message:Message
+	  ?messages:Array<Message>
 	}
 }
