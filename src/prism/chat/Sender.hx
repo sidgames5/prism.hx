@@ -17,7 +17,7 @@ class Sender {
 				{
 					instruction: MESSAGE,
 					params: {
-						data: message
+						message: message
 					}
 				}
 			]
