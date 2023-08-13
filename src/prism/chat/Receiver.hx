@@ -1,10 +1,10 @@
 package prism.chat;
 
-import prism.util.Instructions.*;
-import haxe.Json;
-import prism.util.structs.Request;
 import haxe.Http;
+import haxe.Json;
+import prism.util.Instructions.*;
 import prism.util.structs.Message;
+import prism.util.structs.Request;
 
 class Receiver {
 	/**
@@ -25,12 +25,14 @@ class Receiver {
 		};
 		var re = [];
 		req.setPostData(Json.stringify(r));
-		req.onData = function(raw:String) {
+		req.onData = (raw:String) -> {
 			var data:Request = Json.parse(raw);
 			if (data.status == SUCCESS) {
 				re = data.messages;
 			} else if (data.status == FAILURE || data.status == ERROR || data.status == NOT_FOUND || data.status == INVALID) {}
+			trace(raw);
 		}
+		req.request(true);
 		return re;
 	}
 
