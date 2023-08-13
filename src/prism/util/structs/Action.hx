@@ -8,7 +8,7 @@ typedef Action = {
 	?params:{
 		?username:String,
 		?password:String,
-		?data:Any
-	},
-	?messages:Array<Message>
+		?data:Any,
+		?message:Message
+	}
 }
