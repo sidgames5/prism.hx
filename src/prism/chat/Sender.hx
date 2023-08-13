@@ -16,9 +16,8 @@ class Sender {
 			actions: [
 				{
 					instruction: MESSAGE,
-					params: {
-						message: message
-					}
+					params: {},
+					messages: [message]
 				}
 			]
 		};
