@@ -23,7 +23,7 @@ class Receiver {
 				}
 			]
 		};
-		var re = null;
+		var re = [];
 		req.setPostData(Json.stringify(r));
 		req.onData = function(raw:String) {
 			var data:Request = Json.parse(raw);
