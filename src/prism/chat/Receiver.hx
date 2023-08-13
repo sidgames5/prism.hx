@@ -27,10 +27,9 @@ class Receiver {
 		req.setPostData(Json.stringify(r));
 		req.onData = (raw:String) -> {
 			var data:Request = Json.parse(raw);
-			if (data.status == SUCCESS) {
-				re = data.messages;
+			if (data.actions[0].status == SUCCESS) {
+				re = data.actions[0].messages;
 			} else if (data.status == FAILURE || data.status == ERROR || data.status == NOT_FOUND || data.status == INVALID) {}
-			trace(raw);
 		}
 		req.request(true);
 		return re;
