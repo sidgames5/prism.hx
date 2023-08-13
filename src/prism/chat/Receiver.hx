@@ -28,7 +28,7 @@ class Receiver {
 		req.onData = function(raw:String) {
 			var data:Request = Json.parse(raw);
 			if (data.status == SUCCESS) {
-				re = data.response[0];
+				re = data.actions[0].messages;
 			} else if (data.status == FAILURE || data.status == ERROR || data.status == NOT_FOUND || data.status == INVALID) {}
 		}
 		return re;
