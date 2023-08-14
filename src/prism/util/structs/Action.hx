@@ -10,7 +10,10 @@ typedef Action = {
 		?username:String,
 		?password:String,
 		?data:Any,
-		?message:Message
+		?message:Message,
+		?index:Int,
+		?startIndex:Int,
+		?endIndex:Int
 	},
 	?messages:Array<Message>
 }
