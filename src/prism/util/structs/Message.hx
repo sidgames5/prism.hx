@@ -6,6 +6,6 @@ typedef Message = {
 	content:String,
 	author:Author,
 	timestamp:Int,
-	id:Int,
+	?id:Int,
 	crc32:Int
 }
