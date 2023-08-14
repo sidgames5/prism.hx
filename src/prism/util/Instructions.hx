@@ -33,4 +33,9 @@ class Instructions {
 	public static final STRING = 0x1C;
 	public static final DATA = 0x1D;
 	public static final AUTHOR = 0x1E;
+	public static final SELF_KEY = 0x1F;
+	public static final SELF_KEY_ENCRYPTED = 0x20;
+	public static final CREATE_CONVERSATION = 0x21;
+	public static final ADD_PARTICIPANT = 0x22;
+	public static final REMOVE_PARTICIPANT = 0x23;
 }
