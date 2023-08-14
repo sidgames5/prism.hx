@@ -9,7 +9,7 @@ import haxe.Http;
 import prism.util.structs.Message;
 
 class Sender {
-	public static function send(message:Message, url:String) {
+	public static function send(message:Message, convo:Int, url:String) {
 		var req = new Http(url);
 		var c:Request = {
 			status: NULL,
@@ -17,7 +17,8 @@ class Sender {
 				{
 					instruction: MESSAGE,
 					params: {
-						message: message
+						message: message,
+						index: convo
 					}
 				}
 			]
