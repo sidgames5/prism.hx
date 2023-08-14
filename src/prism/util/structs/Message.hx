@@ -5,5 +5,7 @@ import prism.util.structs.Author;
 typedef Message = {
 	content:String,
 	author:Author,
-	timestamp:Int
+	timestamp:Int,
+	id:Int,
+	crc32:Int
 }
