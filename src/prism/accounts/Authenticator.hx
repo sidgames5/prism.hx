@@ -1,4 +1,4 @@
-package prism.auth;
+package prism.accounts;
 
 import haxe.Json;
 import prism.crypto.Encryption;

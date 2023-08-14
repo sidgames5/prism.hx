@@ -13,7 +13,8 @@ typedef Action = {
 		?message:Message,
 		?index:Int,
 		?startIndex:Int,
-		?endIndex:Int
+		?endIndex:Int,
+		?type:Int
 	},
 	?messages:Array<Message>
 }

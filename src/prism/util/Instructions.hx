@@ -38,4 +38,7 @@ class Instructions {
 	public static final CREATE_CONVERSATION = 0x21;
 	public static final ADD_PARTICIPANT = 0x22;
 	public static final REMOVE_PARTICIPANT = 0x23;
+	public static final TYPE = 0x24;
+	public static final GET = 0x25;
+	public static final USERS = 0x26;
 }
