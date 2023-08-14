@@ -8,7 +8,7 @@ import prism.util.structs.Conversation;
 import prism.util.Instructions.*;
 
 class Conversations {
-	public static function register(c:Conversation, url:String) {
+	public static function register(c:Conversation, url:String):Int {
 		var req = new Http(url);
 		var d:Request = {
 			status: NULL,
@@ -22,10 +22,13 @@ class Conversations {
 			]
 		};
 		req.setPostData(Json.stringify(d));
+		var id = 0;
 		req.onData = (raw:String) -> {
 			var data:Request = Json.parse(raw);
+			id = data.response[0];
 		}
 		req.request(true);
+		return id;
 	}
 
 	public static function addParticipant(user:Account, convo:Int, url:String) {
