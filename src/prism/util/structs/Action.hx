@@ -15,7 +15,8 @@ typedef Action = {
 		?startIndex:Int,
 		?endIndex:Int,
 		?type:Int,
-		?token:Bytes
+		?token:Bytes,
+		?details:String
 	},
 	?messages:Array<Message>
 }
