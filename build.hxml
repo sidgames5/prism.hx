@@ -1,5 +1,6 @@
 -cp src
 -D analyzer-optimize
 --library crypto:1.0.4
+--library haxe-ws:1.0.5
 --main prism.test.Main
 --interp

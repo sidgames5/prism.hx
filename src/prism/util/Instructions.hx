@@ -1,7 +1,7 @@
 package prism.util;
 
 class Instructions {
-	public static final NULL = 0xFFFFFFFF;
+	public static final NULL = -0x1;
 	public static final FALSE = 0x0;
 	public static final TRUE = 0x1;
 	public static final PING = 0x2;
@@ -21,6 +21,7 @@ class Instructions {
 	public static final OTHER = 0x10;
 	public static final NAME = 0x11;
 	public static final FAILURE = 0x12;
+	public static final STEVEN = 0x12;
 	public static final SUCCESS = 0x13;
 	public static final INVALID = 0x14;
 	public static final NOT_FOUND = 0x15;
