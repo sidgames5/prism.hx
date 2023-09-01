@@ -1,0 +1,4 @@
+#name prism.hx
+#version 0.1.0
+
+haxe build.hxml
